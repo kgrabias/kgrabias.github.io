@@ -1,0 +1,90 @@
+{
+  "1": {
+    "name": "Leśniczówka Andrzeja Florka",
+    "description": "Historyczne miejsce spotkań organizacji konspiracyjnych",
+    "type": "Budynek",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Leśniczówka Andrzeja Florka w czasach współczesnych"
+      },
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Leśniczówka Andrzeja Florka w czasach współczesnych"
+      },
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Leśniczówka Andrzeja Florka w czasach współczesnych"
+      }
+    ]
+  },
+  "2": {
+    "name": "Krzyż i obelisk partyzancki AK pod Mogielicą",
+    "description": "Pomnik upamiętniający działalność AK w regionie",
+    "type": "Monument",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Krzyż i obelisk partyzancki AK na tle Mogielicy"
+      }
+    ]
+  },
+  "3": {
+    "name": "Obóz OP \"Wilk\" pod Mogielicą",
+    "description": "Baza Oddziału Partyzanckiego \"Wilk\" pod Mogielicą",
+    "type": "Miejsce historyczne",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Historyczne miejsce obozu OP Wilk pod Mogielicą"
+      }
+    ]
+  },
+  "4": {
+    "name": "Mogielica",
+    "description": "Najwyższy szczyt Beskidu Wyspowego",
+    "type": "Góra",
+    "additional_info": "Należy do Korony Gór Polski",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Szczyt Mogielicy - panorama"
+      }
+    ]
+  },
+  "5": {
+    "name": "Obelisk na \"ryżowskich łąkach\"",
+    "description": "Głaz z tablicą upamiętniającą partyzanckie msze polowe",
+    "type": "Monument",
+    "location": "Pomiędzy osiedlami Groń i Magorzyca",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Obelisk na ryżowskich łąkach w otoczeniu przyrody"
+      }
+    ]
+  },
+  "6": {
+    "name": "Obelisk Lotników Alianckich pod Dzielcem",
+    "description": "Obelisk upamiętniający zrzuty zaopatrzenia dla żołnierzy AK",
+    "type": "Monument",
+    "code_name": "Zrzutowisko \"Sójka\" 401",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Obelisk Lotników Alianckich pod Dzielcem"
+      }
+    ]
+  },
+  "7": {
+    "name": "OSP w Słopnicach Górnych",
+    "description": "Remiza OSP z Izbą Pamięci 1 Pułku Strzelców Podhalańskich AK",
+    "type": "Muzeum",
+    "imgs": [
+      {
+        "url": "/assets/images/oboz-wilk.png",
+        "alt": "Remiza OSP w Słopnicach Górnych z Izbą Pamięci"
+      }
+    ]
+  }
+}
