@@ -43,9 +43,6 @@ mobileSidebarBtn.addEventListener('click', () => {
 });
 
 const GPX_FILES = ['cz1_IV_trasa.gpx', 'cz1_I_trasa.gpx', 'test.gpx', 'test2.gpx']; //na ten moment trzeba aktualizowac recznie z folderu paths
-let progressPolyline = null;
-let trackedPoints = [];
-let trackingInterval = null;
 function changeSidebarContent(buttonId) {
   buttons.forEach(btn => btn.classList.remove('active'));
   document.getElementById(buttonId).classList.add('active');
@@ -53,17 +50,7 @@ function changeSidebarContent(buttonId) {
   if (buttonId === 'button_trasyAK') {
     sidebarContent.innerHTML = `<ul id="track-list"></ul>`; //tu zaczynamy tworzyc zawartosc dla przycisku sladami ak
     const list = document.getElementById('track-list');
-  //
-  if (trackingInterval) {
-  clearInterval(trackingInterval);
-  trackingInterval = null;
-}
-if (progressPolyline) {
-  map.removeLayer(progressPolyline);
-  progressPolyline = null;
-}
-trackedPoints = [];
-//
+  
     GPX_FILES.forEach(filename => {
       fetch(`paths/${filename}`)
         .then(res => res.text())
@@ -86,25 +73,18 @@ trackedPoints = [];
 
             if (window.trackLayer) map.removeLayer(window.trackLayer);
             window.trackLayer = new L.GPX(`paths/${filename}`, {
-            async: true,
-            marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null },
-            polyline_options: { 
-              color: '#ff6162',
-              dashArray: '5 20',
-              weight: '12',
-              opacity: '0.8'
-            },
-            // Dodajemy styl dla przebytej części trasy
-            past_track_options: {
-              color: '#4CAF50', // Zielony kolor dla przebytej części
-              weight: '12',
-              opacity: '0.8'
-            }
-          }).on('loaded', e => {
-            map.fitBounds(e.target.getBounds());
-            // Rozpoczynamy śledzenie lokalizacji po załadowaniu trasy
-            startTrackingProgress(e.target);
-          }).addTo(map);
+              async: true,
+              marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null },
+              polyline_options: 
+              { 
+                color: '#ff6162',
+                dashArray: '5 20',
+                weight: '12',
+                opacity: '0.8'
+              } 
+            }).on('loaded', e => {
+              map.fitBounds(e.target.getBounds());
+            }).addTo(map);
 
             document.querySelectorAll('.track-details-cont').forEach(container => {
               container.innerHTML = '';
@@ -211,86 +191,3 @@ window.addEventListener('DOMContentLoaded', () => {
   changeSidebarContent('button_trasyAK');
   appContainer.classList.add('sidebar-visible');
 });
-
-function startTrackingProgress(gpxLayer) {
-  // Usuń poprzednie śledzenie jeśli istnieje
-  if (trackingInterval) {
-    clearInterval(trackingInterval);
-    trackedPoints = [];
-    if (progressPolyline) {
-      map.removeLayer(progressPolyline);
-    }
-  }
-
-  // Pobierz wszystkie punkty trasy
-  const allPoints = [];
-  gpxLayer.getLayers().forEach(layer => {
-    if (layer instanceof L.Polyline) {
-      layer.getLatLngs().forEach(latlngs => {
-        if (Array.isArray(latlngs)) {
-          latlngs.forEach(ll => allPoints.push(ll));
-        } else {
-          allPoints.push(latlngs);
-        }
-      });
-    }
-  });
-
-  // Rozpocznij okresowe sprawdzanie lokalizacji
-  trackingInterval = setInterval(async () => {
-    try {
-      const location = await getCurrentLocation();
-      const userLatLng = L.latLng(location.lat, location.lng);
-
-      // Znajdź najbliższy punkt trasy
-      let closestPoint = null;
-      let closestDist = Infinity;
-      let closestIndex = -1;
-
-      allPoints.forEach((point, index) => {
-        const dist = userLatLng.distanceTo(point);
-        if (dist < closestDist) {
-          closestDist = dist;
-          closestPoint = point;
-          closestIndex = index;
-        }
-      });
-
-      // Jeśli jesteśmy wystarczająco blisko trasy (np. w odległości 50 metrów)
-      if (closestDist < 50) {
-        // Dodaj punkty od początku do najbliższego punktu
-        const newPoints = allPoints.slice(0, closestIndex + 1);
-        
-        // Aktualizuj śledzone punkty, zachowując unikalność
-        newPoints.forEach(point => {
-          const exists = trackedPoints.some(
-            tp => tp.lat === point.lat && tp.lng === point.lng
-          );
-          if (!exists) {
-            trackedPoints.push(point);
-          }
-        });
-
-        // Aktualizuj linię postępu
-        updateProgressPolyline(trackedPoints);
-      }
-    } catch (error) {
-      console.error('Błąd śledzenia lokalizacji:', error);
-    }
-  }, 5000); // Sprawdzaj co 5 sekund
-}
-
-function updateProgressPolyline(points) {
-  if (points.length < 2) return;
-
-  if (progressPolyline) {
-    progressPolyline.setLatLngs(points);
-  } else {
-    progressPolyline = L.polyline(points, {
-      color: '#4CAF50', // Zielony kolor dla przebytej części
-      weight: 12,
-      opacity: 0.8,
-      lineJoin: 'round'
-    }).addTo(map);
-  }
-}

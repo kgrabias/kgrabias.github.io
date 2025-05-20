@@ -402,6 +402,10 @@ body {
   cursor: pointer;
 }
 
+.close-btn :hover {
+  transform: scale(1.05);
+}
+
 .right-logo {
   position: absolute;
   width: 120px;
@@ -482,6 +486,56 @@ body {
 .mobile-sidebar-hidden .sidebar {
   transform: translateY(100%);
   transition: transform 0.4s ease-in-out;
+}
+
+.login-popup-mobile {
+  display: none;
+}
+
+.more-info-popup {
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  background-color: rgba(255, 255, 255);
+  border: 1px solid #d3ceb2;
+  border-radius: 3px;
+  padding: 10px;
+  width: 120px;
+  margin-top: 4px;
+}
+
+.more-info-popup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.more-info-popup li {
+  margin-bottom: 8px;
+}
+
+.more-info-popup button {
+  width: 100%;
+  border: none;
+  font-family: Courier;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.more-info-popup button:hover {
+  background-color: #dcd6c5;
+  color: black;
+  transform: scale(1.05);
+  font-weight: bold;
+
+}
+
+.hidden {
+  display: none;
 }
 
 
@@ -633,8 +687,129 @@ body {
   }
   
   /* */
-  
+  .login-popup {
+    display: none;
+  }
+  .login-popup-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+  }
+
+  .login-popup-mobile-content {
+    width: 90%;
+    background-color: #f7f7f0;
+    border-radius: 3px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .login-popup-mobile .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .login-popup-mobile .logo-mobile {
+    width: 100px;
+    display: block;
+    margin: 0 auto 12px auto;
+  }
+
+  .login-popup-mobile h2 {
+    font-size: 16px;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .login-popup-mobile label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Courier;
+  }
+
+  .login-popup-mobile input {
+    padding: 10px;
+    font-size: 14px;
+    width:100%;
+    border: 1px solid #ccc;
+    border-radius:  3px;
+    margin-bottom: 12px;
+  }
+
+  .login-popup-mobile input::placeholder {
+    font-family: Courier;
+    font-size: 13px;
+  }
+
+  .login-popup-mobile button {
+    padding: 14px;
+    width: 100%;
+    background-color: #848482;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .more-info-popup {
+    display: none;
+  }
+  .more-info-popup-mobile {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid #d3ceb2;
+    border-radius: 3px;
+    padding: 10px;
+    width: 120px;
+    margin-top: 4px;  
+    z-index: 1001;
+  }
+
+  .more-info-popup-mobile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .more-info-popup-mobile li {
+    margin-bottom: 8px;
+  }
+
+  .more-info-popup-mobile button {
+    width: 100%;
+    border: none;
+    font-family: Courier;
+    background: none;
+    text-align: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+  .hidden {
+    display: none;
+  }
 
   /* miejsce na respo dla popupa logowania *crying* *nie działa od wczoraj* */
 }
-
