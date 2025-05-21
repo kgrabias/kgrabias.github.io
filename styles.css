@@ -94,7 +94,8 @@ body {
   flex: 1;
   white-space: nowrap;
   font-family: Courier;
-
+  color: black;
+  
 }
 .sidebar-buttons button:hover {
   background-color: #dcd6c5;
@@ -210,6 +211,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 .layer-popup {
@@ -637,6 +639,12 @@ body {
     justify-content: space-around;
   }
 
+  .sidebar-buttons button {
+    color: black;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
   .mobile-header {
     display: flex;
     height: 60px;
@@ -662,6 +670,7 @@ body {
     left: auto;
     right: 0;
     bottom: calc(100% + 10px);
+
   }
 
   .leaflet-top.leaflet-right {
@@ -689,6 +698,7 @@ body {
 
   .mobile-sidebar-button {
     display: block;
+    color: black;
   }
 
   .main-layout.mobile-sidebar-hidden .map-options {
@@ -820,5 +830,5 @@ body {
     display: none;
   }
 
-  /* miejsce na respo dla popupa logowania *crying* *nie działa od wczoraj* */
+  
 }
