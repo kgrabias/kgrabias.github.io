@@ -1,11 +1,10 @@
 var map = L.map('main-map', {
     zoomControl: false
-}).setView([51.66, 20.66], 12);
+}).setView([50.05, 19.9], 12);
 var corner_SW = L.latLng(48.8500,16.0000); //skrajne punkty Polski 49.0000,14.1167
 var corner_NE = L.latLng(51.0000,22.2500); 
 var bounds = L.latLngBounds(corner_SW, corner_NE);
 map.setMaxBounds(bounds);
-
 // Kontrolki w prawym górnym rogu
 var geocoder = L.Control.geocoder({
     position: 'topright',

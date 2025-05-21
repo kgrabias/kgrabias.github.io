@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx creator="https://gpx.studio" version="1.1" schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2">
   <metadata>
-    <name>cz.1 IV -Partyzanci I Pułku Strzelców Podhalańskich AK na stokach Mogielicy</name>
+    <name>1.4</name>
     <author>
       <name>gpx.studio</name>
       <link href="https://gpx.studio"/>
@@ -13,17 +13,17 @@
     <cmt>Punktem początkowym jest remiza OSP w Słopnicach Górnych, w której znajduje się Izba Pamięci 1 Pułku Strzelców Podhalańskich AK.</cmt>
     <desc>Punktem początkowym jest remiza OSP w Słopnicach Górnych, w której znajduje się Izba Pamięci 1 Pułku Strzelców Podhalańskich AK.</desc>
   </wpt>
-  <wpt lat="49.634699" lon="20.306142">
-    <ele>836.5735520915596</ele>
-    <name>Leśniczówka Andrzeja Florka</name>
-    <cmt>Tu odbywały się spotkania organizacji konspiracyjnych</cmt>
-    <desc>Tu odbywały się spotkania organizacji konspiracyjnych</desc>
-  </wpt>
   <wpt lat="49.652605" lon="20.323676">
     <ele>692.866392062884</ele>
     <name>Obelisk Lotników Alianckich pod Dzielcem</name>
     <cmt>Obelisk upamiętnia dzieje zrzutów z zaopatrzeniem dla żołnierzy AK na zrzutowisko &quot;Sójka&quot; 401.</cmt>
     <desc>Obelisk upamiętnia dzieje zrzutów z zaopatrzeniem dla żołnierzy AK na zrzutowisko &quot;Sójka&quot; 401.</desc>
+  </wpt>
+  <wpt lat="49.634699" lon="20.306142">
+    <ele>836.5735520915596</ele>
+    <name>Leśniczówka Andrzeja Florka</name>
+    <cmt>Tu odbywały się spotkania organizacji konspiracyjnych</cmt>
+    <desc>Tu odbywały się spotkania organizacji konspiracyjnych</desc>
   </wpt>
   <wpt lat="49.638248" lon="20.301051">
     <ele>846.5566285056531</ele>
@@ -46,12 +46,6 @@
     <name>Obelisk na &quot;ryżowskich łąkach&quot;</name>
     <cmt>Głaz z tablicą upamiętniającą partyzanckie msze polowe pomiędzy osiedlami Groń i Magorzyca</cmt>
     <desc>Głaz z tablicą upamiętniającą partyzanckie msze polowe pomiędzy osiedlami Groń i Magorzyca</desc>
-  </wpt>
-  <wpt lat="49.65896" lon="20.343767">
-    <ele>531.2686062897567</ele>
-    <name>OSP w Słopnicach Górnych</name>
-    <cmt>Remiza OSP w Słopnicach Górnych jest również punktem końcowym.</cmt>
-    <desc>Remiza OSP w Słopnicach Górnych jest również punktem końcowym.</desc>
   </wpt>
   <trk>
     <name>cz.1 IV -Partyzanci I Pułku Strzelców Podhalańskich AK na stokach Mogielicy</name>
@@ -10439,7 +10433,7 @@
           </gpxtpx:TrackPointExtension>
         </extensions>
       </trkpt>
-      <trkpt lat="49.658975" lon="20.343913">
+      <trkpt lat="49.658975" lon="20.343999">
         <ele>532.75</ele>
       </trkpt>
     </trkseg>

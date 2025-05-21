@@ -1,3 +1,4 @@
+const GPX_FILES = ['1-1.gpx', '1-4.gpx', 'test.gpx', 'test2.gpx']; //na ten moment trzeba aktualizowac recznie z folderu paths
 const sidebarBtn = document.getElementById('sidebar-btn');
 const appContainer = document.querySelector('.main-layout');
 const arrowIcon = document.getElementById('arrow-icon');
@@ -11,6 +12,22 @@ const arrowRightSVG = `
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
     </svg>`;
+const firstLastMarker = L.icon({
+  iconUrl: '/assets/start.png', 
+  iconSize: [54, 66],
+  iconAnchor: [1, 65],
+  popupAnchor: [1, -34],
+  shadowUrl: null,
+  shadowSize: null
+});
+const regularMarker = L.icon({
+  iconUrl: '/assets/marker.png', 
+  iconSize:[39, 60] ,
+  iconAnchor: [19, 59],
+  popupAnchor: [1, -34],
+  shadowUrl: null,
+  shadowSize: null
+});
 sidebarBtn.addEventListener('click', () => {
   const isHidden = appContainer.classList.toggle('sidebar-hidden');
   appContainer.classList.toggle('sidebar-visible', !isHidden);  //visible do przemieszcania przycisku warstw
@@ -42,7 +59,7 @@ mobileSidebarBtn.addEventListener('click', () => {
   }, 310);
 });
 
-const GPX_FILES = ['cz1_IV_trasa.gpx', 'cz1_I_trasa.gpx', 'test.gpx', 'test2.gpx']; //na ten moment trzeba aktualizowac recznie z folderu paths
+
 function changeSidebarContent(buttonId) {
   buttons.forEach(btn => btn.classList.remove('active'));
   document.getElementById(buttonId).classList.add('active');
@@ -58,7 +75,6 @@ function changeSidebarContent(buttonId) {
           const parser = new DOMParser();
           const xml = parser.parseFromString(xmlText, 'application/xml');
           const trackName = xml.querySelector('trk > name').textContent;
-
           const li = document.createElement('li');
           const btn = document.createElement('button');
           btn.textContent = trackName;
@@ -74,7 +90,12 @@ function changeSidebarContent(buttonId) {
             if (window.trackLayer) map.removeLayer(window.trackLayer);
             window.trackLayer = new L.GPX(`paths/${filename}`, {
               async: true,
-              marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null },
+              marker_options: { startIconUrl: null, endIconUrl: null, shadowUrl: null},
+               /*markers: {    //tak się powinno zrobić, ale nie działa, dlatego jest obrazek 1px nazwany pin-icon-wpt.png żeby działało. 
+                    wptIcons: {
+                      '': '/assets/marker.png'
+                    }
+                  },*/ 
               polyline_options: 
               { 
                 color: '#ff6162',
@@ -97,6 +118,7 @@ function changeSidebarContent(buttonId) {
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(gpxText, 'application/xml');
                 const trackPoint = xml.querySelectorAll('trkpt');
+                const wayPoint = xml.querySelectorAll('wpt');
                 let distance = 0;
                 let elevGain = 0;
                 let elevLoss = 0;
@@ -111,7 +133,7 @@ function changeSidebarContent(buttonId) {
                   if (lastPoint) {
                     distance += distanceFunction(lastPoint.lat, lastPoint.lon, lat, lon);
                   }
-
+                  
                   if (lastEle !== null) {
                     const difference = ele - lastEle;
                     if (difference > 0) {
@@ -125,6 +147,39 @@ function changeSidebarContent(buttonId) {
                   lastEle = ele;
                 });
 
+                for (let i = 0; i < wayPoint.length; i++) {
+                  const wpt = wayPoint[i];
+                  const lat = parseFloat(wpt.getAttribute('lat'));
+                  const lon = parseFloat(wpt.getAttribute('lon'));
+                  const latLng = L.latLng(lat, lon);
+                  const name = wpt.querySelector('name')?.textContent || ''; // ? sprawia, że jeśli nie ma opistu to będzie pusty opis w okienku zamiast problemów
+                  const desc = wpt.querySelector('desc')?.textContent || '';
+                  //const trackName = trackName.replace(/\s+/g, '-').toLowerCase(); // tworzymy przyjazny URL na wszelki
+                  let ikona;
+                  let popupContent;
+                  if (i == 0 ){ 
+                    ikona = firstLastMarker; 
+                    popupContent = `<b>Start: </b>`;
+                  }
+                  else { 
+                    ikona = regularMarker; 
+                    popupContent = `<b>Punkt ${i + 1}: </b>`;
+                  }
+                  const marker = L.marker(latLng, { icon: ikona });
+
+                  if (name) popupContent += `<b>${name}</b>`;
+                  if (desc) popupContent += `<br>${desc}`;
+                  const filenameForURL = filename.slice(0, -4); // obcięcie ".gpx" 
+                  if (filenameForURL && desc) {
+                    popupContent += `<br><a href="/szlak/${filenameForURL}/punkt/${i + 1}" target="_blank">Pokaż więcej</a>`;
+                  }
+                  
+                  marker.bindPopup(popupContent).openPopup();
+                  marker.addTo(map);
+                  /*const linkHtml = `<a href="/punkt/${i + 1}" target="_blank">Pokaż więcej</a>`;
+                  marker.bindPopup(`Punkt ${i + 1}: ${description}<br>${linkHtml}`).openPopup();
+                  marker.addTo(map);*/
+                }
                
 
                 const details = `
