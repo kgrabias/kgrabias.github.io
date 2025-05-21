@@ -640,6 +640,11 @@ body {
   .mobile-header {
     display: flex;
     height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
   }
 
   .map-options {
@@ -657,6 +662,10 @@ body {
     left: auto;
     right: 0;
     bottom: calc(100% + 10px);
+  }
+
+  .leaflet-top.leaflet-right {
+    top: 70px;
   }
   
   .map-options .leaflet-control-locate, .map-options #layer-btn {
