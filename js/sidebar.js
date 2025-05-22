@@ -274,7 +274,7 @@ function changeSidebarContent(buttonId) {
 		sidebarContent.innerHTML = `<ul id="track-list"></ul>`;
 		loadTrackList();
 	} else if (buttonId === 'button_planowanie') {
-		sidebarContent.innerHTML = `<h3>Ta funkcjonalność</h3><p>nadejdzie niebawem</p><p>boooogie woooogie ahoj</p>`;
+		sidebarContent.innerHTML = `<h3>Ta funkcjonalność</h3><p>nadejdzie niebawem</p>`;
 	}
 }
 
