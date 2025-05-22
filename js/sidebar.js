@@ -5,7 +5,19 @@ let trackLayer = null;
 // Konfiguracje ikon
 const iconConfigs = {
 	firstLastMarker: {
+		iconUrl: '/assets/start-end.png',
+		iconSize: [54, 66],
+		iconAnchor: [1, 65],
+		popupAnchor: [1, -34]
+	},
+	firstMarker: {
 		iconUrl: '/assets/start.png',
+		iconSize: [54, 66],
+		iconAnchor: [1, 65],
+		popupAnchor: [1, -34]
+	},
+	lastMarker: {
+		iconUrl: '/assets/end.png',
 		iconSize: [54, 66],
 		iconAnchor: [1, 65],
 		popupAnchor: [1, -34]
@@ -71,25 +83,57 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
 	const y = deltaLat;
 	return Math.sqrt(x * x + y * y) * R;
 }
-
+function readWaypoint(wpt){
+		let lat = parseFloat(wpt.getAttribute('lat'));
+		let lon = parseFloat(wpt.getAttribute('lon'));
+		let latLng = L.latLng(lat, lon);
+		let name = wpt.querySelector('name')?.textContent || '';
+		let desc = wpt.querySelector('desc')?.textContent || '';
+		return {
+			lat:lat,
+			lon:lon,
+			latLng:latLng,
+			name:name,
+			desc:desc
+		};
+}
 // Tworzenie znaczników dla punktów trasy
 function createWaypointMarkers(waypoints, filename) {
 	const filenameForURL = filename.slice(0, -4);
-
+	const N = waypoints.length;
+	const isLoop = (readWaypoint(waypoints[0]).lat === readWaypoint(waypoints[N-1]).lat)&&(readWaypoint(waypoints[0]).lon === readWaypoint(waypoints[N-1]).lon)
 	waypoints.forEach((wpt, i) => {
-		const lat = parseFloat(wpt.getAttribute('lat'));
-		const lon = parseFloat(wpt.getAttribute('lon'));
-		const latLng = L.latLng(lat, lon);
-		const name = wpt.querySelector('name')?.textContent || '';
-		const desc = wpt.querySelector('desc')?.textContent || '';
-
+		let wptData=readWaypoint(wpt);
+		const lat=wptData.lat; const lon=wptData.lon; const latLng=wptData.latLng; const name=wptData.name; const desc=wptData.desc;
 		const isFirst = i === 0;
-		const icon = L.icon(isFirst ? iconConfigs.firstLastMarker : iconConfigs.regularMarker);
-
-		let popupContent = isFirst ? `<b>Start: </b>` : `<b>Punkt ${i + 1}: </b>`;
+		const isLast = i===N-1;
+		let icon; let popupContent;
+		if(isFirst){
+			if(isLoop){
+				icon = L.icon(iconConfigs.firstLastMarker);
+				popupContent = `<b>Start/Meta: </b>`;
+			}
+			else{
+				icon = L.icon(iconConfigs.firstMarker);
+				popupContent = `<b>Start: </b>`;
+			}
+		}
+		else if(isLast){
+			if(isLoop){
+				return;
+			}
+			else{
+				icon = L.icon(iconConfigs.lastMarker);
+				popupContent = `<b>Meta: </b>`;
+			}
+			
+		}
+		else{
+			icon = L.icon(iconConfigs.regularMarker);
+			popupContent = `<b>Punkt ${i + 1}: </b>`
+		}
 		if (name) popupContent += `<b>${name}</b>`;
 		if (desc) popupContent += `<br>${desc}`;
-
 		if (filenameForURL && desc) {
 			popupContent += `<br><a href="/szlak/${filenameForURL}/punkt/${i + 1}" target="_blank">Pokaż więcej</a>`;
 		}
@@ -98,7 +142,6 @@ function createWaypointMarkers(waypoints, filename) {
 		markersLayer.addLayer(marker);
 	});
 }
-
 // Obliczanie statystyk trasy
 function calculateTrackStats(trackPoints) {
 	let distance = 0;
