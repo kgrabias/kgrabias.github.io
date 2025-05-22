@@ -829,6 +829,8 @@ body {
   .hidden {
     display: none;
   }
-
-  
+.link-inherit-colour-and-no-underscore{
+  color: black ;
+  text-decoration: none;
+}
 }

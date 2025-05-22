@@ -9,7 +9,7 @@
   </metadata>
   <wpt lat="49.782254" lon="20.022615">
     <ele>730.2532958094042</ele>
-    <name>Schronisko PTTK na Kudłączach</name>
+    <name>Schronisko PTTK na Kudłaczach</name>
     <cmt>Do schroniska na Kudłaczach najbliżej położonego względem Krakowa ze wszystkich schronisk górskich, można dojść szlakami turystycznymi z Myślenic (w linii prostej odległość wynosi zaledwie 8km), Dobczyc, Lubnia, Kasiny Wielkiej, Wiśniowej, i Pcimia. Od strony Pcimia można w jego pobliże podjechać autem.</cmt>
     <desc>Do schroniska na Kudłaczach najbliżej położonego względem Krakowa ze wszystkich schronisk górskich, można dojść szlakami turystycznymi z Myślenic (w linii prostej odległość wynosi zaledwie 8km), Dobczyc, Lubnia, Kasiny Wielkiej, Wiśniowej, i Pcimia. Od strony Pcimia można w jego pobliże podjechać autem.</desc>
     <link href="/test/test.html"/>
@@ -35,36 +35,38 @@
   <wpt lat="49.766803" lon="20.059628">
     <ele>901.593639646564</ele>
     <name>Obserwatorium astronomiczne na Lubomirze</name>
-    <cmt>do opisania</cmt>
-    <desc>do opisania</desc>
+    <cmt>Na Lubomirze (904 m n.p.m.) w okresie międzywojennym działała stacja astronomiczna. Składała się z dwóch drewnianych pawilonów obserwacyjnych oraz budynku mieszkalnego, dawnego domku myśliwskiego. Placówka powstała z inicjatywy dyrektora Obserwatorium Krakowskiego prof. Tadeusza Banachiewicza.</cmt>
+    <desc>Na Lubomirze (904 m n.p.m.) w okresie międzywojennym działała stacja astronomiczna. Składała się z dwóch drewnianych pawilonów obserwacyjnych oraz budynku mieszkalnego, dawnego domku myśliwskiego. Placówka powstała z inicjatywy dyrektora Obserwatorium Krakowskiego prof. Tadeusza Banachiewicza.</desc>
   </wpt>
   <wpt lat="49.782409" lon="20.050747">
     <ele>709.7859994500413</ele>
     <name>Pomnik ku czci żołnierzy AK na Suchej Polanie</name>
-    <cmt>do opisania</cmt>
-    <desc>do opisania</desc>
+    <cmt> Sucha Polana rozciąga się na Przełęczy Suchej (709 m n.p.m.), między Łysiną a Kamiennikiem. Dawniej nazywano ją też Równicą. Stała tu bacówka, podczas sezonu użytkowana przez baców z gorczańskiej Koniny, którzy wypasali owce okolicznych gospodarzy.</cmt>
+    <desc> Sucha Polana rozciąga się na Przełęczy Suchej (709 m n.p.m.), między Łysiną a Kamiennikiem. Dawniej nazywano ją też Równicą. Stała tu bacówka, podczas sezonu użytkowana przez baców z gorczańskiej Koniny, którzy wypasali owce okolicznych gospodarzy.</desc>
   </wpt>
   <wpt lat="49.789551" lon="20.057121">
     <ele>825.1425221288353</ele>
     <name>Kamiennik Południowy</name>
-    <cmt>do opisania</cmt>
-    <desc>do opisania</desc>
+    <cmt>Kamiennik, okazały masyw, boczne odgałęzienie Pasma Lubomira i Łysiny, oddzielone od głównej części głęboką przełęczą, stanowi efekt nasunięcia płaszczowiny magurskiej z twardymi piaskowcami magurskimi na miękkie łupki i margle płaszczowiny śląskiej. </cmt>
+    <desc>Kamiennik, okazały masyw, boczne odgałęzienie Pasma Lubomira i Łysiny, oddzielone od głównej części głęboką przełęczą, stanowi efekt nasunięcia płaszczowiny magurskiej z twardymi piaskowcami magurskimi na miękkie łupki i margle płaszczowiny śląskiej. </desc>
   </wpt>
   <wpt lat="49.79921" lon="20.047902">
     <ele>784.8914403941616</ele>
     <name>Kamiennik Północny</name>
+    <cmt>Kamiennik Północny (785 m n.p.m.) Grzbiet usiany jest blokami skalnymi, miejscami przypominającyті gołoborza. To skutek wietrzenia twardych piaskowców magurskich, z których zbudowany jest szczyt.</cmt>
+    <desc>Kamiennik Północny (785 m n.p.m.) Grzbiet usiany jest blokami skalnymi, miejscami przypominającyті gołoborza. To skutek wietrzenia twardych piaskowców magurskich, z których zbudowany jest szczyt.</desc>
   </wpt>
   <wpt lat="49.792794" lon="20.03017">
     <ele>484.68818782876883</ele>
     <name>Pomnik wojenny w Porębie</name>
-    <cmt>do opisania</cmt>
-    <desc>do opisania</desc>
+    <cmt>Pomnik czynu zbrojnego w latach II wojny światowej. Przysiółki Poręby były miejscem kwaterowania różnych oddziałów partyzanckich, najdłużej przebywali tu żołnierze oddziału „Pościg" Obwodu AK „Murawa" oraz oddziały s zgrupowania„Żelbet”.</cmt>
+    <desc>Pomnik czynu zbrojnego w latach II wojny światowej. Przysiółki Poręby były miejscem kwaterowania różnych oddziałów partyzanckich, najdłużej przebywali tu żołnierze oddziału „Pościg" Obwodu AK „Murawa" oraz oddziały s zgrupowania„Żelbet”.</desc>
   </wpt>
   <wpt lat="49.779975" lon="20.045899">
     <ele>841.8933728758251</ele>
     <name>Symboliczne groby żołnierzy AK na Łysinie</name>
-    <cmt>do opisania</cmt>
-    <desc>do opisania</desc>
+    <cmt>Obie mogiły są dość podobne, z żelaznymi krzyżami i tabliczkami z napisem: „Mogiła żołnierzy AK poległych we wrześniu 1944 r.". Napis jest wynikiem powstałego po wojnie błędnego przekonania, że były to miejsca pochówku partyzantów poległych podczas obławy niemieckiej na Łysinę i Lubomir w połowie września 1944 г.</cmt>
+    <desc>Obie mogiły są dość podobne, z żelaznymi krzyżami i tabliczkami z napisem: „Mogiła żołnierzy AK poległych we wrześniu 1944 r.". Napis jest wynikiem powstałego po wojnie błędnego przekonania, że były to miejsca pochówku partyzantów poległych podczas obławy niemieckiej na Łysinę i Lubomir w połowie września 1944 г.</desc>
   </wpt>
   <trk>
     <name>cz.1 I - Śladami Żołnierzy Myślenickiego Obwodu AK "Murawa"</name>
