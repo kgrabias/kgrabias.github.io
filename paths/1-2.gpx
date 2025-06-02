@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx creator="https://gpx.studio" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2">
   <metadata>
-    <name>New file 2</name>
+    <name>1.2</name>
     <author>
       <name>gpx.studio</name>
       <link href="https://gpx.studio"/>
@@ -9,51 +9,51 @@
   </metadata>
   <wpt lat="49.784164" lon="20.188025">
     <ele>335.8270282703926</ele>
-    <name> Start: Opactwo Cystersów w Szczyrzycu</name>
+    <name>Opactwo Cystersów w Szczyrzycu</name>
     <cmt>W 1237 r. wojewoda krakowski Teodor z rodu Gryfitów zakupił wieś Szczyrzyc - i po paru latach przeniósł tu cystersów z Ludźmierza na Podhalu, gdzie w roku 1234 ufundował im pierwszą siedzibę. W dolinie Stradomki mnisi wznieśli drewniane budynki opactwa oraz kamienny kościół w stylu gotyckim. Od XV stulecia cysterski klucz szczyrzycki znacznie się powiększył. Zasobność klasztoru pozwoliła na początku XVII w. na budowę barokowego założenia na fundamentach pierwotnego opactwa.</cmt>
     <desc>W 1237 r. wojewoda krakowski Teodor z rodu Gryfitów zakupił wieś Szczyrzyc - i po paru latach przeniósł tu cystersów z Ludźmierza na Podhalu, gdzie w roku 1234 ufundował im pierwszą siedzibę. W dolinie Stradomki mnisi wznieśli drewniane budynki opactwa oraz kamienny kościół w stylu gotyckim. Od XV stulecia cysterski klucz szczyrzycki znacznie się powiększył. Zasobność klasztoru pozwoliła na początku XVII w. na budowę barokowego założenia na fundamentach pierwotnego opactwa.</desc>
   </wpt>
   <wpt lat="49.78083" lon="20.190772">
     <ele>338.1415206047715</ele>
-    <name> Punkt 2: Pomnik w Szczyrzycu</name>
+    <name>Pomnik w Szczyrzycu</name>
     <cmt>Na głównym pomniku znajduje się 5 tablic upamiętniających ofiary II wojny światowej. Środkowa poświęcona jest bohaterom ziemi szczyrzyckiej, którzy zginęli podczas okupacji. Tablice obok upamiętniają 65 osób zamordowanych po wejściu Niemców do Szczyrzyca we wrześniu 1939 r. oraz 42 osoby zabite 18 IX 1944 r. podczas pacyfikacji Smykani, przysiółka Pogorzan. Tablice na obrzeżach dotyczą 10 osób rozstrzelanych we wrześniu 1939 r. oraz mieszkańców Szczyrzyca, którzy zginęli w latach 1943-1944.</cmt>
     <desc>Na głównym pomniku znajduje się 5 tablic upamiętniających ofiary II wojny światowej. Środkowa poświęcona jest bohaterom ziemi szczyrzyckiej, którzy zginęli podczas okupacji. Tablice obok upamiętniają 65 osób zamordowanych po wejściu Niemców do Szczyrzyca we wrześniu 1939 r. oraz 42 osoby zabite 18 IX 1944 r. podczas pacyfikacji Smykani, przysiółka Pogorzan. Tablice na obrzeżach dotyczą 10 osób rozstrzelanych we wrześniu 1939 r. oraz mieszkańców Szczyrzyca, którzy zginęli w latach 1943-1944.</desc>
   </wpt>
   <wpt lat="49.77321" lon="20.157262">
     <ele>653.7149699064618</ele>
-    <name>Punkt 3:  Cięcień - miejsce kwaterowania OP ,,Wilk ll’’ </name>
+    <name>Ciecień - miejsce kwaterowania OP ,,Wilk ll’’ </name>
     <cmt>Na wschodnim stoku Cietnia, poniżej drewnianej altany stoi krzyż z napisem: CHWAŁA POLAKOM / KTÓRZY ODDALI ŻYCIE/NA DROGACH / DO NIEPOLEGŁOŚCI / TOWARZYSZE BRONI / SZCZYRZYC 1989 R. Dawni członkowie oddziału „Wilk II&quot; upamiętnili w ten sposób miejsce swojego kwaterowania w 1944 r. Ppor. Wiktor Lach, komendant Placówki Dobra i dowódca oddziału był przez swoich podkomendnych nazywany „wilkiem, lisem i tygrysem&quot;.</cmt>
     <desc>Na wschodnim stoku Cietnia, poniżej drewnianej altany stoi krzyż z napisem: CHWAŁA POLAKOM / KTÓRZY ODDALI ŻYCIE/NA DROGACH / DO NIEPOLEGŁOŚCI / TOWARZYSZE BRONI / SZCZYRZYC 1989 R. Dawni członkowie oddziału „Wilk II&quot; upamiętnili w ten sposób miejsce swojego kwaterowania w 1944 r. Ppor. Wiktor Lach, komendant Placówki Dobra i dowódca oddziału był przez swoich podkomendnych nazywany „wilkiem, lisem i tygrysem&quot;.</desc>
   </wpt>
   <wpt lat="49.773575" lon="20.142699">
     <ele>827.5463082571291</ele>
-    <name>Punkt 4:  Cięcień (829 m n.p.m.)</name>
-    <cmt>Szczyt Cietnia 4 oznakowany jest tabliczką z wysokością (829 m n.p.m.). Porośnięty lasem, nie ma walorów widokowych. Szeroką panoramę można obejrzeć z polany podszczytowej, użytkowanej w poprzednich latach przez paralotniarzy. Schodzi się do niej 100 m niebieskim szlakiem w stronę Kasiny Wielkiej.
+    <name>Ciecień (829 m n.p.m.)</name>
+    <cmt>Szczyt Cietnia oznakowany jest tabliczką z wysokością (829 m n.p.m.). Porośnięty lasem, nie ma walorów widokowych. Szeroką panoramę można obejrzeć z polany podszczytowej, użytkowanej w poprzednich latach przez paralotniarzy. Schodzi się do niej 100 m niebieskim szlakiem w stronę Kasiny Wielkiej.
 </cmt>
-    <desc>Szczyt Cietnia 4 oznakowany jest tabliczką z wysokością (829 m n.p.m.). Porośnięty lasem, nie ma walorów widokowych. Szeroką panoramę można obejrzeć z polany podszczytowej, użytkowanej w poprzednich latach przez paralotniarzy. Schodzi się do niej 100 m niebieskim szlakiem w stronę Kasiny Wielkiej.
+    <desc>Szczyt Cietnia oznakowany jest tabliczką z wysokością (829 m n.p.m.). Porośnięty lasem, nie ma walorów widokowych. Szeroką panoramę można obejrzeć z polany podszczytowej, użytkowanej w poprzednich latach przez paralotniarzy. Schodzi się do niej 100 m niebieskim szlakiem w stronę Kasiny Wielkiej.
 </desc>
   </wpt>
   <wpt lat="49.787893" lon="20.145822">
     <ele>642.164481680797</ele>
-    <name>Punkt 5: Księża Góra (649 m n.p.m.)</name>
+    <name>Księża Góra (649 m n.p.m.)</name>
     <cmt>Tablica z mapą Beskidu Wyspowego to początek ścieżki na Księżą Górę. Szlak niebieski omija wierzchołek Księżej Góry (649 m n.p.m.), ale na porośnięty lasem bukowym szczyt prowadzi ścieżka (idzie się nią 5 min). Stoi tam kamienny ołtarz i wysoki drewniany krzyż. Przy ołtarzu drewniana figura Pana Jezusa, pod drzewem stara figura świętego. W sezonie letnim sporadycznie są tu odprawiane msze św.</cmt>
     <desc>Tablica z mapą Beskidu Wyspowego to początek ścieżki na Księżą Górę. Szlak niebieski omija wierzchołek Księżej Góry (649 m n.p.m.), ale na porośnięty lasem bukowym szczyt prowadzi ścieżka (idzie się nią 5 min). Stoi tam kamienny ołtarz i wysoki drewniany krzyż. Przy ołtarzu drewniana figura Pana Jezusa, pod drzewem stara figura świętego. W sezonie letnim sporadycznie są tu odprawiane msze św.</desc>
   </wpt>
   <wpt lat="49.816409476345086" lon="20.14587866169731">
     <ele>615.9831033214942</ele>
-    <name>Punkt 6: Grodzisko - miejsce byłego cmentarza partyzanckiego, symbolicznq mogiła żołnierzy AK</name>
+    <name>Grodzisko - miejsce byłego cmentarza partyzanckiego, symboliczna mogiła żołnierzy AK</name>
     <cmt>Grodzisko (618 m n.p.m.) to najbardziej na północ wysunięty szczyt Pasma Cietnia, porośnięty buczyną karpacką, z szeroką wierzchowiną. Ma wyjątkowo długą i ciekawą historię, której ślady można obserwować do dziś. Jego nazwa nawiązuje do grodu, jaki istniał w tym miejscu w XII-XIII w. Jednak już znacznie wcześniej, w okresie kultury łużyckiej, kwitło tu osadnictwo.</cmt>
     <desc>Grodzisko (618 m n.p.m.) to najbardziej na północ wysunięty szczyt Pasma Cietnia, porośnięty buczyną karpacką, z szeroką wierzchowiną. Ma wyjątkowo długą i ciekawą historię, której ślady można obserwować do dziś. Jego nazwa nawiązuje do grodu, jaki istniał w tym miejscu w XII-XIII w. Jednak już znacznie wcześniej, w okresie kultury łużyckiej, kwitło tu osadnictwo.</desc>
   </wpt>
   <wpt lat="49.821365" lon="20.142064">
     <ele>442.93074612645506</ele>
-    <name>Punkt 7:  Poznachowice Górne - miejsce kwaterowania OP „Śmiały” </name>
+    <name>Poznachowice Górne - miejsce kwaterowania OP „Śmiały” </name>
     <cmt>Po zejściu niebieskim szlakiem ze szczytu Grodziska do drogi asfaltowej, skręca się w lewo i po ok. 100 m dochodzi do pierwszych zabudowań Poznachowic Górnych. W czasie okupacji gospodarstwo Dudzików było miejscem kwaterowania oddziału partyzanckiego „Śmiały”, a sam gospodarz, Andrzej Dudzik, i dwaj jego synowie Władysław „Scyzoryk&quot; oraz Marian „Brzytwa&quot; należeli do oddziału.</cmt>
     <desc>Po zejściu niebieskim szlakiem ze szczytu Grodziska do drogi asfaltowej, skręca się w lewo i po ok. 100 m dochodzi do pierwszych zabudowań Poznachowic Górnych. W czasie okupacji gospodarstwo Dudzików było miejscem kwaterowania oddziału partyzanckiego „Śmiały”, a sam gospodarz, Andrzej Dudzik, i dwaj jego synowie Władysław „Scyzoryk&quot; oraz Marian „Brzytwa&quot; należeli do oddziału.</desc>
   </wpt>
   <wpt lat="49.831472" lon="20.096083">
     <ele>422.3028892190208</ele>
-    <name>Punkt 8: Sarnulki, gajówka „Rogacza” - siedziba komendy myślenickiego Obwodu AK „Murawa”</name>
+    <name>Sarnulki, gajówka „Rogarza” - siedziba komendy myślenickiego Obwodu AK „Murawa”</name>
     <cmt>Sarnulki, przysiółek miejscowości Kornatka, rozciąga się we wschodniej części masywu Glichowca (523 m n.p.m.), na wysokości ok. 450 m n.p.m. Stojąca tam do dziś gajówka, która należała do gajowego Wojciecha Piwowarskiego „Rogacza&quot;, w 1944 r. służyła jako kwatera komendanta myślenickiego Obwodu AK „Murawa&quot;, ppor. Wincentego Horodyńskiego „Kościeszy”</cmt>
     <desc>Sarnulki, przysiółek miejscowości Kornatka, rozciąga się we wschodniej części masywu Glichowca (523 m n.p.m.), na wysokości ok. 450 m n.p.m. Stojąca tam do dziś gajówka, która należała do gajowego Wojciecha Piwowarskiego „Rogacza&quot;, w 1944 r. służyła jako kwatera komendanta myślenickiego Obwodu AK „Murawa&quot;, ppor. Wincentego Horodyńskiego „Kościeszy”</desc>
   </wpt>
