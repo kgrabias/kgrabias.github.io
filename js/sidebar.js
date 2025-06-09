@@ -1,4 +1,4 @@
-const GPX_FILES = ['1-1.gpx', '1-2.gpx', '1-4.gpx'];
+const GPX_FILES = ['1-1.gpx', '1-2.gpx', '1-3.gpx', '1-4.gpx','1-5.gpx','1-6.gpx'];
 const markersLayer = L.layerGroup().addTo(map);
 let trackLayer = null;
 
