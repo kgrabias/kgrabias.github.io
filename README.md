@@ -1,3 +1,2 @@
 # przewodnik
-Przewodnik historyczno-krajoznawczy "Śladami Armii Krajowej w Małopolsce" 
-AGH NTwK grupa MaSaKra - Marta, Sandra, Krzysztof
+To nie jest prawdziwy projekt, tylko pole do testów i hostowania fronendu
